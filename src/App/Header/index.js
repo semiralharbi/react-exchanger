@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Clock } from "../Clock";
 import Img from "./Img";
 import "./style.css";
 const Header = ({ title }) => {
@@ -11,7 +12,7 @@ const Header = ({ title }) => {
 
   return (
     <header className="header">
-      <p className="date">{date}</p>
+      <Clock></Clock>
       <h1>{title}</h1>
       <div>
         <Img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Flag_of_Poland_%28normative%29.svg/250px-Flag_of_Poland_%28normative%29.svg.png" />
