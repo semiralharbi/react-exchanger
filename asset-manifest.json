@@ -1,16 +1,12 @@
 {
   "files": {
-    "main.css": "/react-exchanger/static/css/main.5872a9e3.css",
-    "main.js": "/react-exchanger/static/js/main.c226c418.js",
+    "main.js": "/react-exchanger/static/js/main.7603c42b.js",
     "static/js/787.d4fc5d5e.chunk.js": "/react-exchanger/static/js/787.d4fc5d5e.chunk.js",
-    "static/media/dollars.jpg": "/react-exchanger/static/media/dollars.032f4a6e177d00aecc8c.jpg",
     "index.html": "/react-exchanger/index.html",
-    "main.5872a9e3.css.map": "/react-exchanger/static/css/main.5872a9e3.css.map",
-    "main.c226c418.js.map": "/react-exchanger/static/js/main.c226c418.js.map",
+    "main.7603c42b.js.map": "/react-exchanger/static/js/main.7603c42b.js.map",
     "787.d4fc5d5e.chunk.js.map": "/react-exchanger/static/js/787.d4fc5d5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5872a9e3.css",
-    "static/js/main.c226c418.js"
+    "static/js/main.7603c42b.js"
   ]
 }
