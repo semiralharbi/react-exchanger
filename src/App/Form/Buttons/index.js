@@ -1,9 +1,5 @@
-import "./style.css";
+import { FormButton } from "./styled";
 
-const Button = ({ type, text, onSubmit, onReset }) => (
-  <button className="form__button" type={type}>
-    {text}
-  </button>
-);
+const Button = ({ type, text }) => <FormButton type={type}>{text}</FormButton>;
 
 export default Button;

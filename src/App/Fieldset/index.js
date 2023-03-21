@@ -1,9 +1,9 @@
-import "./style.css";
+import { Legend, StyledFieldset, StyledLegend } from "./styled";
 const Fieldset = ({ title, children }) => (
-  <fieldset className="form__fieldset">
-    <legend className="form__legend">{title}</legend>
+  <StyledFieldset>
+    <StyledLegend>{title}</StyledLegend>
     {children}
-  </fieldset>
+  </StyledFieldset>
 );
 
 export default Fieldset;

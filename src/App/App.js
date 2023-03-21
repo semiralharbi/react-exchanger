@@ -1,8 +1,6 @@
-import "./App.css";
 import React, { useState } from "react";
 import Container from "./Container";
 import Header from "./Header";
-import Div from "./Div";
 import Fieldset from "./Fieldset";
 import Form from "./Form";
 import Result from "./Result";
@@ -26,14 +24,11 @@ function App() {
     <>
       <Header title="Kalkulator walut"></Header>
       <Container>
-        <Div>
-          <Form calculateResult={calculateResult}></Form>
-        </Div>
-        <Div>
-          <Fieldset title="Twoja kwota to:">
-            <Result result={result}></Result>
-          </Fieldset>
-        </Div>
+        <Form calculateResult={calculateResult}></Form>
+
+        <Fieldset title="Twoja kwota to:">
+          <Result result={result}></Result>
+        </Fieldset>
       </Container>
     </>
   );

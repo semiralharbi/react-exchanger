@@ -1,9 +1,0 @@
-.form__button{
-    background-color: hsl(210, 33%, 13%);
-    color: #FEE715FF;
-    border-radius: 20px;
-    margin: 30px;
-}
-.form__button:hover{
-    background-color: hsl(210, 33%, 20%);
-}

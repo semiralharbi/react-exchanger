@@ -3,6 +3,7 @@ import Button from "./Buttons";
 import { ButtonType } from "./Buttons/enum.ts";
 import { currencies } from "../Currency";
 import Fieldset from "../Fieldset";
+import { StyledInput, StyledSelect } from "./style";
 
 const Form = ({ calculateResult }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -25,19 +26,25 @@ const Form = ({ calculateResult }) => {
         <p>
           <label>
             Kwota w PLN:
-            <input value={amount} onChange={({ target }) => setAmount(target.value)} type="number" min="1" required />
+            <StyledInput
+              value={amount}
+              onChange={({ target }) => setAmount(target.value)}
+              type="number"
+              min="1"
+              required
+            />
           </label>
         </p>
         <p>
           <label>
             Wybierz walutę:
-            <select value={currency} onChange={({ target }) => setCurrency(target.value)}>
+            <StyledSelect value={currency} onChange={({ target }) => setCurrency(target.value)}>
               {currencies.map((currency) => (
                 <option key={currency.short} value={currency.short}>
                   {currency.fullName}
                 </option>
               ))}
-            </select>
+            </StyledSelect>
           </label>
         </p>
         <Button type={ButtonType.Submit} text="Sprawdz!"></Button>
