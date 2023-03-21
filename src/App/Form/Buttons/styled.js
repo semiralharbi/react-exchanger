@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const FormButton = styled.button`
-  background-color: hsl(210, 33%, 15%);
-  color: #fee715fe;
+  background-color: ${({ theme }) => theme.color.mirage};
+  color: ${({ theme }) => theme.color.candlelight};
   border-radius: 20px;
   box-shadow: 1px 1px 6px black;
   margin: 30px;
   width: 30%;
   height: 40px;
-  @media (max-width: 890px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile890}) {
     width: 60%;
     margin: auto;
     margin-top: 16px;
@@ -16,15 +16,34 @@ export const FormButton = styled.button`
 
   &:hover {
     outline: none;
-    color: #fee715fe;
+    color: ${({ theme }) => theme.color.candlelight};
     cursor: pointer;
     position: relative;
     z-index: 0;
-    background-color: hsl(210, 33%, 24%);
+    background-color: ${({ theme }) => theme.color.mirage};
   }
   &:hover::before {
     content: "";
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(
+      45deg,
+      #e60000,
+      #e63900,
+      #e67300,
+      #e6ac00,
+      #e6e600,
+      #ace600,
+      #73e600,
+      #39e600,
+      #00e600,
+      #00e6ac,
+      #00e6e6,
+      #0073e6,
+      #0000e6,
+      #7300e6,
+      #e600e6,
+      #e60073,
+      #e60000
+    );
     position: absolute;
     top: 0px;
     left: 0px;
@@ -43,7 +62,7 @@ export const FormButton = styled.button`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: hsl(210, 33%, 15%);
+    background: ${({ theme }) => theme.color.mirage};
     left: 0;
     top: 0;
     border-radius: 20px;

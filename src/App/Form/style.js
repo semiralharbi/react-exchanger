@@ -10,12 +10,12 @@ export const StyledInput = styled.input`
   height: 30px;
   width: 56%;
   text-align-last: center;
-  @media (max-width: 890px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile890}) {
     width: 60%;
   }
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 6px yellow;
+    box-shadow: 0px 0px 6px ${({ theme }) => theme.color.candlelight};
   }
 `;
 
@@ -29,11 +29,11 @@ export const StyledSelect = styled.select`
   height: 30px;
   width: 56%;
   text-align-last: center;
-  @media (max-width: 890px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile890}) {
     width: 60%;
   }
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 6px yellow;
+    box-shadow: 0px 0px 6px ${({ theme }) => theme.color.candlelight};
   }
 `;
