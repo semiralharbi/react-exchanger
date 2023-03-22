@@ -8,6 +8,7 @@ import Result from "./Result";
 import { currencies } from "./Currency";
 
 function App() {
+  
   const [result, setResult] = useState();
 
   const calculateResult = (currency, amount) => {
@@ -25,7 +26,6 @@ function App() {
       <Header title="Kalkulator walut"></Header>
       <Container>
         <Form calculateResult={calculateResult}></Form>
-
         <Fieldset title="Twoja kwota to:">
           <Result result={result}></Result>
         </Fieldset>
