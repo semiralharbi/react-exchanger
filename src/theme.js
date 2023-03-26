@@ -2,6 +2,7 @@ export const theme = {
   color: {
     candlelight: "#FFCB15",
     mirage: "#18242F",
+    mandy: "#ED6170",
   },
   urls: {
     dollars:

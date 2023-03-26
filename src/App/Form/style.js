@@ -37,3 +37,11 @@ export const StyledSelect = styled.select`
     box-shadow: 0px 0px 6px ${({ theme }) => theme.color.candlelight};
   }
 `;
+
+export const Loading = styled.p`
+  color: ${({ theme }) => theme.color.candlelight};
+`;
+
+export const Failure = styled.p`
+  color: ${({ theme }) => theme.color.mandy};
+`;
